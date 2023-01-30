@@ -1,20 +1,18 @@
-import './App.css';
+import './App.css'; 
+
 
 function App() {
   return (
-    <><h1>React Todo</h1>
-    <div className='todos'>
-      <div className='todo'>
-        <button>Done</button>
-        <p>Make Todo App in react</p>
+    // Todo list
+    //input to add todo
+    <div className="App">
+      <h1>Todo List</h1>
+      <div className="todo-list">
+        <ul id="todo-list"></ul>
       </div>
-      <div className='todo'>
-      <input id="todo-name" type='text' placeholder='Add a new todo' />
-      <input id="date-picker" type="date" />
-      <button onClick="addTodo()"> Add </button>
-      </div>
+      <input type='text' id='todo-input' />
+      <button id='add-todo' onClick={addTodo}>Add Todo</button>
     </div>
-    </>
   );
 }
 
