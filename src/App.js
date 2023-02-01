@@ -3,15 +3,20 @@ import './App.css';
 
 function App() {
   return (
-    // Todo list
-    //input to add todo
     <div className="App">
-      <h1>Todo List</h1>
-      <div className="todo-list">
-        <ul id="todo-list"></ul>
-      </div>
-      <input type='text' id='todo-input' />
-      <button id='add-todo' onClick={addTodo}>Add Todo</button>
+      <header className="App-header">
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
