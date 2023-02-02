@@ -1,9 +1,7 @@
-import { getByTitle } from '@testing-library/react';
 import './App.css'; 
 
 
 function App() {
-  resetTo();
   render();
   return (
     <div>
@@ -16,13 +14,10 @@ function resetTo(){
 } 
 
 function render(){
+  resetTo();
   title();
   generic();
-  let div = document.createElement("div");
-  div.innerHTML = "Hello World";
-  //giv this to the div classname = "title"
-  div.setAttribute("class", "title");
-  document.body.appendChild(div);
+  displayTodo();
 }
 
 function title(){
@@ -34,19 +29,34 @@ function title(){
 function generic(){
    let div = document.createElement("div");
 
-  //add a input
+  //add a input that will take the task
   let input = document.createElement("input");
   input.setAttribute("type", "text");
-  input.setAttribute("id", "input");
+  input.setAttribute("id", "task");
   input.setAttribute("placeholder", "Add a new task");
   div.appendChild(input);
 
-  //add a button
+  //add a button that trigger the add function
   let button = document.createElement("button");
   button.setAttribute("id", "button");
+  button.setAttribute("onclick", "add()");
   button.innerHTML = "Add";
   div.appendChild(button);
   document.body.appendChild(div);
 }
+
+function displayTodo(){
+  console.log("displayTodo");
+  let div = document.createElement("div");
+  div.setAttribute("id", "todo");
+  document.body.appendChild(div);
+}
+
+function add(){
+  console.log("add");
+  return false;
+}
+
+
 
 export default App;
