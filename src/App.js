@@ -1,8 +1,8 @@
-import './App.css'; 
-
+import './App.css';
 
 function App() {
   render();
+  add();
   return (
     <div>
     </div>
@@ -40,23 +40,28 @@ function generic(){
   let button = document.createElement("button");
   button.setAttribute("id", "button");
   button.setAttribute("onclick", "add()");
-  button.innerHTML = "Add";
+  button.innerHTML = "+";
   div.appendChild(button);
   document.body.appendChild(div);
 }
 
 function displayTodo(){
-  console.log("displayTodo");
+  //add the todo stocked in the local storage to the div
   let div = document.createElement("div");
   div.setAttribute("id", "todo");
   document.body.appendChild(div);
 }
+ 
+if (document.getElementById("button")) {
+  console.log("button exist");
+}
 
 function add(){
   console.log("add");
-  return false;
-}
-
-
+  let task = document.getElementById("task").value;
+  let div = document.createElement("div");
+  div.innerHTML = task;
+  document.getElementById("todo").appendChild(div);
+} 
 
 export default App;
