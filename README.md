@@ -87,3 +87,20 @@ A simple todo list application built with ReactJS.
 
 Clone this repository and install the dependencies.
 
+
+## Usage
+
+Start the development server and open `http://localhost:3000` in your browser.
+
+
+
+## Contributing
+
+Contributions are always welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+
+
