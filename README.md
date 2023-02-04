@@ -69,3 +69,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # React-Todo
+
+A simple todo list application built with ReactJS.
+
+## Features
+
+- Add new todos
+- Mark todos as completed
+- Remove completed todos
+- Persist todos in local storage
+
+## Requirements
+
+- NodeJS and NPM installed on your system
+
+## Installation
+
+Clone this repository and install the dependencies.
+
